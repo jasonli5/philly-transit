@@ -1,3 +1,7 @@
-# npm install
+# How to install locally
 
-# npm run dev
+### Install dependencies
+> npm install
+
+### Start development server
+>npm run dev
