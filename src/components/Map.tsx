@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
 import {
   GoogleMap,
   LoadScript,
   Polygon,
   Polyline,
+  InfoBox,
 } from "@react-google-maps/api";
-import data from "../assets/BSL.json";
+import TransitRoute from "./TransitRoute";
 
 const containerStyle = {
-  width: "100%",
+  width: "70%",
   height: "100vh",
 };
 
@@ -17,32 +17,32 @@ const center = {
   lng: -75.165222,
 };
 
+const options = {
+  disableDefaultUI: true,
+  clickableIcons: false,
+  mapId: "994286d5df0529d2",
+};
+
+const infoBoxOptions = {
+  closeBoxURL: "",
+  enableEventPropagation: true,
+};
+
 function Map() {
   return (
-    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+    <div id="container">
       <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
+        id="map"
         zoom={10}
         heading={9}
-        options={{
-          mapId: "994286d5df0529d2",
-          disableDefaultUI: true,
-        }}
+        center={center}
+        mapContainerStyle={containerStyle}
+        options={options}
       >
-        <Polyline
-          path={[
-            { lat: 39.952583, lng: -75.165222 },
-            { lat: 39.852583, lng: -75.165222 },
-          ]}
-          options={{
-            strokeColor: "#FF0000",
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-          }}
-        />
+        <TransitRoute routeName="BSL" routeColor="orange" />
       </GoogleMap>
-    </LoadScript>
+      <div id="sidebar"></div>
+    </div>
   );
 }
 
