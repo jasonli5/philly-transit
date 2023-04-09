@@ -23,7 +23,7 @@
         "position": [40.02455837837375, -75.14790256495647]
       },
       {
-        "name": "Hunting Park",
+        "name": "Hunting Park Station",
         "position": [40.016933727995735, -75.14950337113358]
       },
       {
@@ -195,5 +195,109 @@
         "position": [40.023013182624226, -75.07795559255067]
       }
     ]
+  },
+  "AIR": {
+    "name": "Airport Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "CHE": {
+    "name": "Chestnut Hill East Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "CHW": {
+    "name": "Chestnut Hill West Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "CYN": {
+    "name": "Cynwyd Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "FOX": {
+    "name": "Fox Chase Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "LAN": {
+    "name": "Lansdale/Doylestown Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "MED": {
+    "name": "Media/Wawa Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "NOR": {
+    "name": "Manayunk/Norristown Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "PAO": {
+    "name": "Paoli/Thorndale Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "TRE": {
+    "name": "Trenton Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "WAR": {
+    "name": "Warminster Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "WIL": {
+    "name": "Wilmington/Newark Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
+  },
+  "WTR": {
+    "name": "West Trenton Line",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "regional rail",
+    "dailyRidership": 170000,
+    "stops": []
   }
 }

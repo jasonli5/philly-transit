@@ -1,16 +1,11 @@
-import {
-  GoogleMap,
-  LoadScript,
-  Polygon,
-  Polyline,
-  InfoBox,
-  Marker,
-} from "@react-google-maps/api";
+import { GoogleMap } from "@react-google-maps/api";
 import TransitRoute from "./TransitRoute";
 import React from "react";
 import transitInfo from "../assets/TransitInfo.json";
 import { TransitInfoJSON, TransitModeOptionsType } from "../types";
 import SelectOption from "./SelectOption";
+import StationStop from "./StationStop";
+import "../styling/Map.css";
 
 const containerStyle = {
   width: "70%",
@@ -29,13 +24,29 @@ const mapOptions = {
 
 const transitModeOptions: TransitModeOptionsType = {
   Subway: ["BSL", "MFL"],
-  Regional: [],
+  Regional: [
+    "AIR",
+    "CHE",
+    "CHW",
+    "CYN",
+    "FOX",
+    "LAN",
+    "MED",
+    "NOR",
+    "PAO",
+    "TRE",
+    "WAR",
+    "WIL",
+    "WTR",
+  ],
   Bus: [],
 };
 
 function Map() {
   const [selectedRoute, setSelectedRoute] =
     React.useState<keyof TransitInfoJSON>("BSL");
+
+  const [selectedStation, setSelectedStation] = React.useState<string>("");
 
   const [map, setMap] = React.useState<google.maps.Map | null>(null);
 
@@ -57,9 +68,22 @@ function Map() {
     if (value) {
       setMode(value as keyof typeof transitModeOptions);
     }
+    setSelectedRoute("BSL");
+    setSelectedStation("");
   }
 
-  console.log("RENDERED");
+  function onStationClick(
+    event: google.maps.MapMouseEvent,
+    stationName: string
+  ) {
+    setSelectedStation(stationName);
+    if (map && event.latLng) {
+      map.panTo(event.latLng);
+      map.setZoom(16);
+    }
+  }
+
+  console.log("RENDERED", transitModeOptions[mode]);
 
   return (
     <div className="map-container">
@@ -80,12 +104,11 @@ function Map() {
               clickHandler={onRouteClick}
             />
             {transitInfo[routeName].stops.map((stop, index) => (
-              <Marker
+              <StationStop
                 key={index}
-                position={
-                  new google.maps.LatLng(stop.position[0], stop.position[1])
-                }
-                icon={"https://cdn-icons-png.flaticon.com/16/50/50724.png"}
+                stopPosition={stop.position}
+                stationName={stop.name}
+                clickHandler={onStationClick}
               />
             ))}
           </div>
@@ -109,6 +132,9 @@ function Map() {
             options={Object.keys(transitModeOptions)}
             onModeChange={onModeChange}
           />
+        </div>
+        <div className="station-title-container">
+          <h2>{selectedStation}</h2>
         </div>
       </div>
     </div>

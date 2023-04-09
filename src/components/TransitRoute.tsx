@@ -8,10 +8,36 @@ import { TransitInfoJSON } from "../types";
 // Import Transit GeoJSON
 import BSL_GEOJSON from "../assets/BSL.json";
 import MFL_GEOJSON from "../assets/MFL.json";
+import AIR_GEOJSON from "../assets/regional/AIR.json";
+import CHE_GEOJSON from "../assets/regional/CHE.json";
+import CHW_GEOJSON from "../assets/regional/CHW.json";
+import CYN_GEOJSON from "../assets/regional/CYN.json";
+import FOX_GEOJSON from "../assets/regional/FOX.json";
+import LAN_GEOJSON from "../assets/regional/LAN.json";
+import MED_GEOJSON from "../assets/regional/MED.json";
+import NOR_GEOJSON from "../assets/regional/NOR.json";
+import PAO_GEOJSON from "../assets/regional/PAO.json";
+import TRE_GEOJSON from "../assets/regional/TRE.json";
+import WAR_GEOJSON from "../assets/regional/WAR.json";
+import WIL_GEOJSON from "../assets/regional/WIL.json";
+import WTR_GEOJSON from "../assets/regional/WTR.json";
 
 const GEOJSON_ROUTES = {
   BSL: BSL_GEOJSON,
   MFL: MFL_GEOJSON,
+  AIR: AIR_GEOJSON,
+  CHE: CHE_GEOJSON,
+  CHW: CHW_GEOJSON,
+  CYN: CYN_GEOJSON,
+  FOX: FOX_GEOJSON,
+  LAN: LAN_GEOJSON,
+  MED: MED_GEOJSON,
+  NOR: NOR_GEOJSON,
+  PAO: PAO_GEOJSON,
+  TRE: TRE_GEOJSON,
+  WAR: WAR_GEOJSON,
+  WIL: WIL_GEOJSON,
+  WTR: WTR_GEOJSON,
 };
 
 interface TransitRouteProps {
@@ -50,6 +76,7 @@ export const TransitRoute: React.FC<TransitRouteProps> = ({
       });
     });
 
+    console.log(path);
     return path;
   }, []);
 
@@ -76,7 +103,7 @@ export const TransitRoute: React.FC<TransitRouteProps> = ({
   }
 
   return (
-    <React.Fragment>
+    <div>
       <Polyline
         path={pathFromGeoJson}
         options={options}
@@ -97,7 +124,7 @@ export const TransitRoute: React.FC<TransitRouteProps> = ({
           <div className="textbox">{geoProperties.title}</div>
         </InfoBox>
       )}
-    </React.Fragment>
+    </div>
   );
 };
 

@@ -1,6 +1,9 @@
 import Map from "../components/Map";
 import { useLoadScript } from "@react-google-maps/api";
 import "./Home.css";
+import React from "react";
+import Header from "../components/Header";
+import Landing from "./Landing";
 
 function Home() {
   const { isLoaded } = useLoadScript({
@@ -8,11 +11,11 @@ function Home() {
   });
 
   if (!isLoaded) return <div>Loading...</div>;
-  console.log("returning new");
   return (
-    <div>
-      <Map />
-    </div>
+    <React.Fragment>
+      <Header />
+      <Landing />
+    </React.Fragment>
   );
 }
 
