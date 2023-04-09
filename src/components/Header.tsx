@@ -1,8 +1,10 @@
+import SubwayIcon from "@mui/icons-material/Subway";
+
 export const Header = () => {
   return (
     <header>
       <a href="#" className="logo">
-        <img src="src/assets/images/logo.png" alt="" />
+        <SubwayIcon style={{ fontSize: "48px", color: "#3262ff" }} />
         <span>philly transit</span>
       </a>
       <nav>

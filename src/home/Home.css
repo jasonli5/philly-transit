@@ -1,35 +1,42 @@
+:root {
+    --dark-text-color: #1a1a1a;
+    --blue-color: #3262ff;
+}
+
 body {
-    background-color: black;
+    background-color: white;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 3rem 5rem;
     height: 3.5rem;
-    width: 100%;
+    width: 90%;
     position: fixed;
-}
-
-.scrolled {
-    background-color: #0264fa;
-    box-shadow: 0px 0px 10px;
+    z-index: 2;
+    background-color: white;
+    left: 5%;
+    top: 2rem;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 header img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 header>a {
-    color: white;
+    color: var(--dark-text-color);
     display: flex;
     align-items: center;
     text-decoration: none;
     gap: 0.75rem;
     padding: 1rem;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .nav_links {
@@ -42,12 +49,15 @@ header>a {
 }
 
 .nav_links li a {
-    color: white;
+    color: var(--dark-text-color);
     text-decoration: none;
+    font-weight: 600;
 }
 
 main {
     position: relative;
+    clip-path: ellipse(90% 95% at center 0%);
+    background-color: white;
 }
 
 main::before {
@@ -56,22 +66,60 @@ main::before {
     inset: 0;
     background-image: url(../assets/images/30th.jpg);
     background-size: cover;
-    background-position: 0 60%;
+    background-position: center 60%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
-    opacity: 0.6;
+    opacity: 0.50;
+    filter: blur(1px);
     z-index: -1;
+    /* animation: backgroundSlide 10s ease infinite forwards; */
+}
+
+@keyframes backgroundSlide {
+
+    0% {
+        background-image: url(../assets/images/cityhall.jpg);
+    }
+
+    25% {
+        background-image: url(../assets/images/cityhall.jpg);
+    }
+
+    25.01% {
+        background-image: url(../assets/images/30th-station.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/images/30th-station.jpg);
+    }
+
+    50.01% {
+        background-image: url(../assets/images/30th.jpg);
+    }
+
+    75% {
+        background-image: url(../assets/images/30th.jpg);
+    }
+
+    75.01% {
+        background-image: url(../assets/images/jefferson.jpeg);
+    }
+
+    100% {
+        background-image: url(../assets/images/jefferson.jpeg);
+    }
 }
 
 .section {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
 
 .headline-container {
-    color: white;
+    color: var(--dark-text-color);
     height: 70%;
     width: 80%;
     display: flex;
@@ -84,7 +132,7 @@ main::before {
 }
 
 .title {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     line-height: 4rem;
     font-weight: 600;
 }
@@ -94,27 +142,91 @@ main::before {
     width: 50%;
 }
 
-button {
-    background-color: #ff9100;
-    border: none;
-    display: block;
-    border-radius: 1rem;
-    padding: 0.6rem 2.5rem;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-button a {
+.button {
+    background-color: var(--blue-color);
+    border-radius: 2rem;
+    margin-top: 0.2rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
     color: white;
     text-align: center;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    padding: 1rem 4rem;
+    background-color: #f3642c;
+}
+
+.button:active {
+    background-color: var(--dark-text-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+.intro-section {
+    width: 100%;
+    height: 65vh;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    width: 20rem;
+    background-color: var(--dark-text-color);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1rem;
+    color: white;
+    transition: .3s;
+}
+
+.card-content {}
+
+.card>img {
+    width: 270px;
+    height: 200px;
+    border-radius: 1rem;
+}
+
+.card-link {
     text-decoration: none;
+    color: var(--blue-color);
+    font-weight: 600;
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: #aa461f;
+.card:hover {
+    width: 21rem;
 }
 
-button:active {
-    background-color: red;
+.info-section {
+    background-color: #1a1a1a;
 }

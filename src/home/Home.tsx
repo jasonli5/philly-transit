@@ -4,6 +4,8 @@ import "./Home.css";
 import React from "react";
 import Header from "../components/Header";
 import Landing from "./Landing";
+import Intro from "./Intro";
+import InfoSection from "./InfoSection";
 
 function Home() {
   const { isLoaded } = useLoadScript({
@@ -15,6 +17,8 @@ function Home() {
     <React.Fragment>
       <Header />
       <Landing />
+      <Intro />
+      <InfoSection />
     </React.Fragment>
   );
 }
