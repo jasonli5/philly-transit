@@ -39,6 +39,7 @@ const transitModeOptions: TransitModeOptionsType = {
     "WIL",
     "WTR",
   ],
+  Trolley: ["10", "11", "13", "15", "34", "36", "101", "102"],
   Bus: [],
 };
 
@@ -103,6 +104,7 @@ function Map() {
               routeName={routeName}
               clickHandler={onRouteClick}
             />
+
             {transitInfo[routeName].stops.map((stop, index) => (
               <StationStop
                 key={index}

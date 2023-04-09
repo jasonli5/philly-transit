@@ -23,8 +23,8 @@ export const SelectOption: React.FC<SelectOptionProps> = ({
         sx={{ padding: "0 0.75rem" }}
       >
         {options.map((option, key) => (
-          <Option value={option} key={key}>
-            {option}
+          <Option disabled={option == "Bus"} value={option} key={key}>
+            {option == "Bus" ? "Bus (Coming Soon)" : option}
           </Option>
         ))}
       </Select>

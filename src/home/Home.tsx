@@ -19,6 +19,7 @@ function Home() {
       <Landing />
       <Intro />
       <InfoSection />
+      <Map />
     </React.Fragment>
   );
 }

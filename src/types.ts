@@ -7,4 +7,5 @@ export type TransitModeOptionsType = {
     Subway: (keyof TransitInfoJSON)[];
     Regional: (keyof TransitInfoJSON)[];
     Bus: (keyof TransitInfoJSON)[];
+    Trolley: (keyof TransitInfoJSON)[];
   };

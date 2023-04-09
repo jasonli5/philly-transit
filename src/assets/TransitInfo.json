@@ -299,5 +299,69 @@
     "mode": "regional rail",
     "dailyRidership": 170000,
     "stops": []
+  },
+  "10": {
+    "name": "Trolley Route 10",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "11": {
+    "name": "Trolley Route 11",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "13": {
+    "name": "Trolley Route 13",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "15": {
+    "name": "Trolley Route 15",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "34": {
+    "name": "Trolley Route 34",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "36": {
+    "name": "Trolley Route 36",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "101": {
+    "name": "Trolley Route 101",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
+  },
+  "102": {
+    "name": "Trolley Route 102",
+    "color": "#FFD700",
+    "description": "",
+    "mode": "trolley",
+    "dailyRidership": 0,
+    "stops": []
   }
 }
