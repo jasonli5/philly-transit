@@ -16,7 +16,7 @@ export const Timeline: React.FC<TimelineProps> = ({
   lineColor,
 }) => {
   return (
-    <section className="timeline-section section">
+    <section className="timeline-section">
       <div className="timeline-container">
         <div className="timeline-heading">
           <h1 className="timeline-title">{title}</h1>
@@ -24,14 +24,14 @@ export const Timeline: React.FC<TimelineProps> = ({
         </div>
 
         <div className="timeline-content">
-          <span
+          <div
             className="line"
             style={{
               borderColor: lineColor,
             }}
           >
             <span className="circle"></span>;
-          </span>
+          </div>
 
           <div className="content">
             {content.map((item, index) => {
@@ -50,7 +50,6 @@ export const Timeline: React.FC<TimelineProps> = ({
                 </div>
               );
             })}
-            ;
           </div>
         </div>
       </div>

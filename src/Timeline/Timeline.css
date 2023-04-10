@@ -1,10 +1,10 @@
 body {
-    background-color: #dbdbdb;
-    height: 100%;
+    background-color: #d8d8d8;
 }
 
 .timeline-section {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    background-color: #d8d8d8;
 }
 
 .timeline-container {

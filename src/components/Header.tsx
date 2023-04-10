@@ -33,7 +33,7 @@ export const Header: React.FC<HeaderProps> = ({ fixed }) => {
         </a>
         <ul className="nav_links">
           <li>
-            <a href="#timeline-heading" onClick={toggleMenu}>
+            <a href="#timeline" onClick={toggleMenu}>
               Timelines
             </a>
           </li>

@@ -4,11 +4,11 @@
     display: flex;
 }
 
-
 #sidebar {
     width: 30%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
+    background-color: white;
 }
 
 .textbox {
@@ -44,10 +44,6 @@
 
 .mode-select {
     width: 150px;
-}
-
-.select_option-container {
-    
 }
 
 .station-title-container {

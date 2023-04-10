@@ -7,7 +7,7 @@ export const Landing = () => {
           Explore the history of Philadelphia's SEPTA with interactive maps,
           timelines, videos, and more!
         </p>
-        <a role="button" className="button" href="#intro-heading">
+        <a role="button" className="button" href="#timeline">
           Explore
         </a>
       </div>
