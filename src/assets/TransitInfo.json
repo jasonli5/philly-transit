@@ -201,7 +201,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 4686,
+    "distance": 20.2,
+    "stations": 10,
     "stops": []
   },
   "CHE": {
@@ -209,7 +211,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 3874,
+    "distance": 12.2,
+    "stations": 14,
     "stops": []
   },
   "CHW": {
@@ -217,7 +221,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 4464,
+    "distance": 14.7,
+    "stations": 14,
     "stops": []
   },
   "CYN": {
@@ -225,7 +231,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 505,
+    "distance": 6.1,
+    "stations": 7,
     "stops": []
   },
   "FOX": {
@@ -233,7 +241,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 4560,
+    "distance": 12.5,
+    "stations": 10,
     "stops": []
   },
   "LAN": {
@@ -241,7 +251,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 17306,
+    "distance": 35.8,
+    "stations": 28,
     "stops": []
   },
   "MED": {
@@ -249,7 +261,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 11202,
+    "distance": 16.5,
+    "stations": 19,
     "stops": []
   },
   "NOR": {
@@ -257,7 +271,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 11486,
+    "distance": 19.5,
+    "stations": 16,
     "stops": []
   },
   "PAO": {
@@ -265,7 +281,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 21284,
+    "distance": 37.9,
+    "stations": 22,
     "stops": []
   },
   "TRE": {
@@ -273,7 +291,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 11132,
+    "distance": 36.4,
+    "stations": 15,
     "stops": []
   },
   "WAR": {
@@ -281,7 +301,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 7667,
+    "distance": 22.3,
+    "stations": 17,
     "stops": []
   },
   "WIL": {
@@ -289,7 +311,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 8917,
+    "distance": 41.1,
+    "stations": 22,
     "stops": []
   },
   "WTR": {
@@ -297,7 +321,9 @@
     "color": "#FFD700",
     "description": "",
     "mode": "regional rail",
-    "dailyRidership": 170000,
+    "dailyRidership": 12031,
+    "distance": 34.7,
+    "stations": 23,
     "stops": []
   },
   "10": {
@@ -305,7 +331,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 11589,
     "stops": []
   },
   "11": {

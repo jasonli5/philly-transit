@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Landing from "./Landing";
 import Intro from "./Intro";
 import InfoSection from "./InfoSection";
+import TimelineSection from "./TimelineSection";
 
 function Home() {
   const { isLoaded } = useLoadScript({
@@ -17,8 +18,7 @@ function Home() {
     <React.Fragment>
       <Header />
       <Landing />
-      <Intro />
-      <InfoSection />
+      <TimelineSection />
       <Map />
     </React.Fragment>
   );
