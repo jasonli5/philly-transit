@@ -1,14 +1,16 @@
 import "./App.css";
 import Home from "./home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import BSLTimeline from "./Timeline/BSLTimeline";
 import MFLTimeline from "./Timeline/MFLTimeline";
 import TrolleyTimeline from "./Timeline/TrolleyTimeline";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bsl-timeline" element={<BSLTimeline />} />

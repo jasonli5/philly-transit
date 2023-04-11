@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 export const Landing = () => {
   return (
     <main className="section">
@@ -7,9 +9,9 @@ export const Landing = () => {
           Explore the history of Philadelphia's SEPTA with interactive maps,
           timelines, videos, and more!
         </p>
-        <a role="button" className="button" href="#timeline">
+        <Link role="button" className="button" to="/#timeline">
           Explore
-        </a>
+        </Link>
       </div>
     </main>
   );

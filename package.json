@@ -19,10 +19,12 @@
     "@react-google-maps/api": "^2.18.1",
     "@types/geojson": "^7946.0.10",
     "@types/google.maps": "^3.52.5",
+    "@types/react-router-hash-link": "^2.4.6",
     "geojson": "^0.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
