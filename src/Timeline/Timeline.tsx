@@ -45,7 +45,10 @@ export const Timeline: React.FC<TimelineProps> = ({
                     <p>{item.description}</p>
                   </div>
                   <div className="content-image">
-                    <img src={item.image.src} alt={item.image.alt} />
+                    <img
+                      src={`philly-transit/${item.image.src}`}
+                      alt={item.image.alt}
+                    />
                   </div>
                 </div>
               );

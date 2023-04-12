@@ -339,7 +339,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 13480,
     "stops": []
   },
   "13": {
@@ -347,7 +347,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 13364,
     "stops": []
   },
   "15": {
@@ -355,7 +355,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 9032,
     "stops": []
   },
   "34": {
@@ -363,7 +363,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 12413,
     "stops": []
   },
   "36": {
@@ -371,7 +371,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 12737,
     "stops": []
   },
   "101": {
@@ -379,7 +379,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 3844,
     "stops": []
   },
   "102": {
@@ -387,7 +387,7 @@
     "color": "#FFD700",
     "description": "",
     "mode": "trolley",
-    "dailyRidership": 0,
+    "dailyRidership": 3888,
     "stops": []
   }
 }

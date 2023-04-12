@@ -54,6 +54,7 @@ function Map() {
   // Change the selected route when the mode changes
   useEffect(() => {
     setSelectedRoute(transitModeOptions[mode][0]);
+    setSelectedStation("");
   }, [mode]);
 
   function onRouteClick(

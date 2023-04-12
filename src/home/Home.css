@@ -286,19 +286,6 @@ h1 {
     object-fit: contain;
 }
 
-
-.map-button {
-    background-color: var(--blue-color);
-    border-radius: 2rem;
-    margin-top: 0.2rem;
-    padding: 1rem 3rem;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
 @media screen and (max-width: 768px) {
     .title {
         font-size: 2.5rem;

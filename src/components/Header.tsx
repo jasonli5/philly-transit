@@ -21,12 +21,12 @@ export const Header: React.FC<HeaderProps> = ({ fixed }) => {
       className={open ? "active-menu" : ""}
       style={{ position: !fixed ? "fixed" : "relative" }}
     >
-      <a href="/" className="logo">
+      <a href="/philly-transit" className="logo">
         <SubwayIcon style={{ fontSize: "48px", color: "#3262ff" }} />
         <span>philly transit</span>
       </a>
       <nav>
-        <a href="#" className="menu-button" onClick={toggleMenu}>
+        <a href="philly-transit/#" className="menu-button" onClick={toggleMenu}>
           <MenuIcon style={{ fontSize: "48px", color: "#000000" }} />
         </a>
         <ul className="nav_links">
@@ -38,11 +38,6 @@ export const Header: React.FC<HeaderProps> = ({ fixed }) => {
           <li>
             <NavLink reloadDocument to="/#map-section" onClick={toggleMenu}>
               Map
-            </NavLink>
-          </li>
-          <li>
-            <NavLink reloadDocument to="#" onClick={toggleMenu}>
-              About Us
             </NavLink>
           </li>
         </ul>

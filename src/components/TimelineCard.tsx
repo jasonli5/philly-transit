@@ -14,7 +14,7 @@ export const TimelineCard: React.FC<TimelineCard> = ({
   return (
     <Link reloadDocument to={link} className="timeline-card">
       <div className="timeline-card-image">
-        <img src={image} />
+        <img src={`philly-transit/${image}`} />
       </div>
       <h2>{title}</h2>
     </Link>

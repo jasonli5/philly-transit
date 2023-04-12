@@ -14,8 +14,8 @@ export const MapSection = () => {
           Map
         </h1>
 
-        <img id="google_map-section" src="images/map.png" />
-        <Link reloadDocument to="map" className="map-button">
+        <img id="google_map-section" src="philly-transit/images/map.png" />
+        <Link reloadDocument to="map" className="button">
           Explore the map!
         </Link>
       </div>
