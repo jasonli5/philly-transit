@@ -2,7 +2,8 @@ import SubwayIcon from "@mui/icons-material/Subway";
 import MenuIcon from "@mui/icons-material/Menu";
 import "../styling/Header.css";
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 interface HeaderProps {
   fixed?: boolean;
@@ -30,12 +31,17 @@ export const Header: React.FC<HeaderProps> = ({ fixed }) => {
         </a>
         <ul className="nav_links">
           <li>
-            <NavLink to="/" onClick={toggleMenu}>
+            <NavLink reloadDocument to="/#timeline" onClick={toggleMenu}>
               Timelines
             </NavLink>
           </li>
           <li>
-            <NavLink to="#" onClick={toggleMenu}>
+            <NavLink reloadDocument to="/#map-section" onClick={toggleMenu}>
+              Map
+            </NavLink>
+          </li>
+          <li>
+            <NavLink reloadDocument to="#" onClick={toggleMenu}>
               About Us
             </NavLink>
           </li>

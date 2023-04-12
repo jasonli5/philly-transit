@@ -5,6 +5,7 @@ import BSLTimeline from "./Timeline/BSLTimeline";
 import MFLTimeline from "./Timeline/MFLTimeline";
 import TrolleyTimeline from "./Timeline/TrolleyTimeline";
 import ScrollToTop from "./components/ScrollToTop";
+import MapPage from "./map/MapPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/bsl-timeline" element={<BSLTimeline />} />
           <Route path="/mfl-timeline" element={<MFLTimeline />} />
           <Route path="/trolley-timeline" element={<TrolleyTimeline />} />
+          <Route path="/map" element={<MapPage />} />
         </Routes>
       </Router>
     </div>

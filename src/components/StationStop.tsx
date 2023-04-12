@@ -5,7 +5,10 @@ import React from "react";
 interface StationStopProps {
   stopPosition: number[];
   stationName: string;
-  clickHandler: (event: google.maps.MapMouseEvent, stationName: string) => void;
+  clickHandler?: (
+    event: google.maps.MapMouseEvent,
+    stationName: string
+  ) => void;
 }
 
 export const StationStop: React.FC<StationStopProps> = ({
@@ -34,7 +37,7 @@ export const StationStop: React.FC<StationStopProps> = ({
       }}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
-      onClick={(e) => clickHandler(e, stationName)}
+      onClick={(e) => clickHandler && clickHandler(e, stationName)}
     />
   );
 };

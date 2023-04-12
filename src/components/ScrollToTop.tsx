@@ -6,6 +6,9 @@ export default function HashRoutingFix() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    // Don't scroll to top on initial load
+    if (pathname === "/") return;
+
     // @ts-expect-error [typescript complains about instant not being a valid value for behavior, but it is]
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname]);

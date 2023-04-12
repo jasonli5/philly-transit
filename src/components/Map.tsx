@@ -1,22 +1,18 @@
-import { GoogleMap } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import TransitRoute from "./TransitRoute";
-import React from "react";
+import React, { useEffect } from "react";
 import transitInfo from "../assets/TransitInfo.json";
 import { TransitInfoJSON, TransitModeOptionsType } from "../types";
 import SelectOption from "./SelectOption";
 import StationStop from "./StationStop";
 import "../styling/Map.css";
 
-const containerStyle = {
-  width: "70%",
-};
-
-const center = {
+export const center = {
   lat: 39.952583,
   lng: -75.165222,
 };
 
-const mapOptions = {
+export const mapOptions = {
   disableDefaultUI: true,
   clickableIcons: false,
   mapId: import.meta.env.VITE_GOOGLE_MAPS_MAP_ID,
@@ -44,15 +40,21 @@ const transitModeOptions: TransitModeOptionsType = {
 };
 
 function Map() {
-  const [selectedRoute, setSelectedRoute] =
-    React.useState<keyof TransitInfoJSON>("BSL");
+  const [mode, setMode] =
+    React.useState<keyof typeof transitModeOptions>("Subway");
+
+  const [selectedRoute, setSelectedRoute] = React.useState<
+    keyof TransitInfoJSON
+  >(transitModeOptions[mode][0]);
 
   const [selectedStation, setSelectedStation] = React.useState<string>("");
 
   const [map, setMap] = React.useState<google.maps.Map | null>(null);
 
-  const [mode, setMode] =
-    React.useState<keyof typeof transitModeOptions>("Subway");
+  // Change the selected route when the mode changes
+  useEffect(() => {
+    setSelectedRoute(transitModeOptions[mode][0]);
+  }, [mode]);
 
   function onRouteClick(
     routeName: keyof TransitInfoJSON,
@@ -69,8 +71,6 @@ function Map() {
     if (value) {
       setMode(value as keyof typeof transitModeOptions);
     }
-    setSelectedRoute("BSL");
-    setSelectedStation("");
   }
 
   function onStationClick(
@@ -84,8 +84,6 @@ function Map() {
     }
   }
 
-  console.log("RENDERED", transitModeOptions[mode]);
-
   return (
     <div className="map-container">
       <GoogleMap
@@ -93,7 +91,6 @@ function Map() {
         zoom={12}
         heading={9}
         center={center}
-        mapContainerStyle={containerStyle}
         options={mapOptions}
         onLoad={(map) => setMap(map)}
       >

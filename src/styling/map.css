@@ -2,13 +2,19 @@
     width: 100%;
     height: 100vh;
     display: flex;
+
+}
+
+#map {
+    width: 70%;
+    flex: 2;
 }
 
 #sidebar {
-    width: 30%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
     background-color: white;
+    flex: 1;
 }
 
 .textbox {
@@ -27,7 +33,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 .selectedRouteText {
@@ -54,4 +60,41 @@
     gap: 0.5rem;
     padding: 1rem;
     margin-top: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .map-container {
+        flex-direction: column;
+    }
+
+    #map {
+        width: 100%;
+        min-height: 60%;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .title-container {
+        margin-top: 0;
+    }
+
+    .station-title-container {
+        margin-top: 0;
+    }
+
+    #sidebar h1 {
+        font-size: 1.5rem;
+    }
+
+    #sidebar h2 {
+        font-size: 1.2rem;
+    }
+
+    #sidebar h3 {
+        font-size: 1rem;
+    }
+
 }
